@@ -19,7 +19,16 @@ public class palindromikKelimeler{
 		for(char o:wordList) new_text+=o;
 		if(text.equals(new_text)) System.out.print("\n" + text +" it is a palindromic word");
 		else System.out.print("\n" + text + " it is not a palindromic word.");
-
+		
+		//region II.YONTEM
+		
+		String temp="";
+		for(int f=text.length() -1; f>=0; f++){
+			temp += text.charAt(f);
+		}
+		if(text.equals(temp)) System.out.println("Bu bir palindromik kelimedir.");
+		else System.out.println("Bu bir palindromik kelime değildir.");
+		//endregion
 	}
 
 
