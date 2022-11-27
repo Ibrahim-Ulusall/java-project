@@ -4,7 +4,7 @@ public class recursiveFibonacci{
 	
 	// 1 1 2 3 5 8 13 21 34 55
 	// f(6) = f(4) + f(5)
-	// f(1) = 
+	// f(x) = f(x-1) + f(x-2);
 	static int f(int number) {
 		if(number==0) return 0;
 		if(number ==2 || number ==1) return 1;
